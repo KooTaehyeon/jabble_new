@@ -1,0 +1,8 @@
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd">
+        <circle stroke="#D5D5D5" fill="#FFF" cx="20" cy="20" r="19.5"/>
+        <text font-family="PretendardVariable_Bold, Pretendard Variable" font-size="18" font-weight="bold" letter-spacing="-.28" fill="#0053FF">
+                    <tspan x="13" y="26">Q</tspan>
+                </text>
+    </g>
+</svg>

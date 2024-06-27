@@ -10,7 +10,7 @@ ARG GROUP_ID
 USER root
 
 # Set the "www-data" user to the same user and group that is running docker
-RUN docker-php-serversideup-set-id www-data ${USER_ID}:${GROUP_ID}
+RUN docker-php-serversideup-set-id www-data 992:991
 
 # Switch back to the "www-data" user
 USER www-data
@@ -37,5 +37,5 @@ WORKDIR /var/www/html
 COPY --chown=www-data:www-data . /var/www/html
 
 # Run Composer install for production
-RUN composer install --no-dev --optimize-autoloader
+RUN composer install —no-dev —optimize-autoloader
 
