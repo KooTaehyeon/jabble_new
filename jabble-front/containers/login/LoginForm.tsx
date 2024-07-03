@@ -63,11 +63,12 @@ const LoginForm = () => {
             </div>
             <Input
               error={errors}
-              placeholder='비밀번호를 입력해주세요.'
+              placeholder='영어 대문자, 소문자, 숫자, 특수문자 조합으로 8-20자 이내로 비밀번호를 입력해주세요.'
               type='password'
               {...register('pw', {
                 pattern: {
-                  value: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
+                  value:
+                    /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,20}$/,
                   message: '비밀번호 형식이 맞지않습니다.',
                 },
               })}
